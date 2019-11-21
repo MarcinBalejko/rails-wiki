@@ -1,18 +1,10 @@
-<style media="screen">
-  img {
-    max-width: 200px;
-    max-height: 200px;
-  }
-</style>
-<!--move it later to css -->
 
 <p id="notice"><%= notice %></p>
-
 
 <h1><%= @article.title %></h1>
 
 <p>
-  <%= image_tag @article.image_url, align: 'right' %>
+  <%= link_to (image_tag @article.image_url, align: 'right') %>
   <%= @article.body %>
   <br>
   <br>
