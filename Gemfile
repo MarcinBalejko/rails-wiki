@@ -5,6 +5,8 @@ ruby '2.6.3'
 
 gem 'travis'
 
+gem 'rspec'
+
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
