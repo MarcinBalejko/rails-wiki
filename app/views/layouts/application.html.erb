@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>RailsWiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">  
@@ -49,7 +50,7 @@
         <li><%= link_to 'All Categories', root_path %> &nbsp; </li>
         <br>
           <% Category.all.each do |category| %>
-            <li><%= link_to category.name, articles_path(category: category.name) %> &nbsp; </li>
+            <li><%= link_to category.name, articles_path(category: category.name), style: 'text-decoration: none;' %> &nbsp; </li>
             <br>
           <% end %>
       </ul>
