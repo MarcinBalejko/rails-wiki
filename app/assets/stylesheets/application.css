@@ -1,4 +1,9 @@
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 img{
     max-width: 200px;
     max-height: 200px;
@@ -10,3 +15,6 @@ img{
     color: black;
 }
 
+#title-underline {
+    border-bottom: solid #c1c3c4 1px;
+}
