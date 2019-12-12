@@ -53,4 +53,20 @@ body, html {
 
 .login-forms {
     border: solid #ced2d4 1px;
+    margin-bottom: 5px;
+    text-align: center;
+    align-content: center;
+    width: 100%;
 }
+
+.login-labels {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #2C3E50;
+    color: white;
+}
+
