@@ -12,7 +12,7 @@
   </head>
 
   <body>
-
+ 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="#">Rails Wiki</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
     </div>
     <div class="col-lg-2">
       <ul class="nav nav-pills nav-stacked">
-        <li><%= link_to 'All Categories', root_path %> &nbsp; </li>
+        <li><%= link_to 'All Categories', root_path, style: 'text-decoration: none;' %> &nbsp; </li>
         <br>
           <% Category.all.each do |category| %>
             <li><%= link_to category.name, articles_path(category: category.name), style: 'text-decoration: none;' %> &nbsp; </li>
@@ -58,9 +58,15 @@
     </div>
   </div>
 </div>
-    <footer>
-    </footer>
+    
 
+      <!-- Footer -->
+      <footer class="page-footer font-small pt-4">
+      <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 footer">© 2018 Copyright:
+            <a href="https://github.com/MarcinBalejko?tab=repositories" class="hlink"> Marcin Balejko</a>
+        </div>
+      </footer>
 
 
     <script
@@ -78,6 +84,9 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous">
     </script>
+    <script>
+      
 
 </body>
+
 </html>

@@ -1,8 +1,8 @@
 
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
-
 
 img{
     max-width: 200px;
@@ -18,3 +18,25 @@ img{
 #title-underline {
     border-bottom: solid #c1c3c4 1px;
 }
+
+#edit-container {
+    margin-top: 5%;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    
+    text-align: center;
+}
+
+body, html {
+    height: 100%;
+  }
