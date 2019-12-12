@@ -14,7 +14,7 @@
   <body>
  
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Rails Wiki</a>
+  <a class="navbar-brand" href="/articles">Rails Wiki</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -46,6 +46,8 @@
     <div class="col-lg-10">
       <%= yield %>
     </div>
+
+    <% if current_page?(new_user_session_path) == false && current_page?(new_user_registration_path) == false %>
     <div class="col-lg-2">
       <ul class="nav nav-pills nav-stacked">
         <li><%= link_to 'All Categories', root_path, style: 'text-decoration: none;' %> &nbsp; </li>
@@ -56,6 +58,8 @@
           <% end %>
       </ul>
     </div>
+    <%end%>
+
   </div>
 </div>
     
