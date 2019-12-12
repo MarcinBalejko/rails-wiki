@@ -46,3 +46,11 @@ body, html {
         display:none;
     }
 }
+
+.special {
+    margin: auto;
+}
+
+.login-forms {
+    border: solid #ced2d4 1px;
+}
