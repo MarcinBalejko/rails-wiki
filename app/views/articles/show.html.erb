@@ -4,7 +4,7 @@
 <h1><%= @article.title %></h1>
 
 <p>
-  <%= link_to (image_tag @article.image_url, align: 'right') %>
+  <%= link_to (image_tag @article.image_url, align: 'right', class: 'mini-pic') %>
   <%= @article.body %>
   <br>
   <p>Created on: <%= @article.created_at.strftime("%Y-%m-%d")%></p>
