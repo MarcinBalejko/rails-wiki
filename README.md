@@ -20,12 +20,12 @@ Tools and technologies used:
 |:------------:|:----------------:|
 |User enters the page with articles| ![signin](app/assets/images/readme-pics/wiki1.jpg)|
 |User can register| ![signin](app/assets/images/readme-pics/wiki2.jpg)|
-|Signing up| ![signin](app/assets/readme-pics/wiki3.jpg)|
-|User can create new article| ![signin](app/assets/readme-pics/wiki4.jpg)|
-|Creating a new article| ![signin](app/assets/readme-pics/wiki5.jpg)|
-|New article created| ![signin](app/assets/readme-pics/wiki6.jpg)|
-|Editing the article| ![signin](app/assets/readme-pics/wiki7.jpg)|
-|User can view articles from a specific category| ![signin](app/assets/readme-pics/wiki8.jpg)|
+|Signing up| ![signin](app/assets/images/readme-pics/wiki3.jpg)|
+|User can create new article| ![signin](app/assets/images/readme-pics/wiki4.jpg)|
+|Creating a new article| ![signin](app/assets/images/readme-pics/wiki5.jpg)|
+|New article created| ![signin](app/assets/images/readme-pics/wiki6.jpg)|
+|Editing the article| ![signin](app/assets/images/readme-pics/wiki7.jpg)|
+|User can view articles from a specific category| ![signin](app/assets/images/readme-pics/wiki8.jpg)|
 
 -----
 
