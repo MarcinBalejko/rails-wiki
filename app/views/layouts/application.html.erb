@@ -10,88 +10,81 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
  
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="/articles">Rails Wiki</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to 'New Article', new_article_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Sign Out', destroy_user_session_path, :method => :delete, class: 'nav-link' %>
-        </li>
-        <% else %>
-        <li class="nav-item">
-          <%= link_to "Sign Up", new_user_registration_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Sign In", new_user_session_path, class: 'nav-link' %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-</nav>
-
-
-<div class="container">
-<% if current_page?(new_user_session_path) == false && current_page?(new_user_registration_path) == false && current_page?(new_user_password_path) == false %>
-  <div class="row">
-    <div class="col-lg-10">
-    <%end%>
-      <%= yield %>
+    <a class="navbar-brand" href="/articles">Rails Wiki</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <% if user_signed_in? %>
+          <li class="nav-item active">
+            <%= link_to 'New Article', new_article_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Sign Out', destroy_user_session_path, :method => :delete, class: 'nav-link' %>
+          </li>
+          <% else %>
+          <li class="nav-item">
+            <%= link_to "Sign Up", new_user_registration_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Sign In", new_user_session_path, class: 'nav-link' %>
+          </li>
+        <% end %>
+      </ul>
     </div>
+  </nav>
 
-    <% if current_page?(new_user_session_path) == false && current_page?(new_user_registration_path) == false && current_page?(new_user_password_path) == false %>
-      <div class="col-lg-2">
-        <ul class="nav nav-pills nav-stacked">
-          <li><%= link_to 'All Categories', root_path, style: 'text-decoration: none;' %> &nbsp; </li>
-          <br>
-          <% Category.all.each do |category| %>
-            <li><%= link_to category.name, articles_path(category: category.name), style: 'text-decoration: none;' %> &nbsp; </li>
-            <br>
-          <% end %>
-        </ul>
+  <div class="container">
+  <% if current_page?(new_user_session_path) == false && current_page?(new_user_registration_path) == false && current_page?(new_user_password_path) == false %>
+    <div class="row">
+      <div class="col-lg-10">
+      <%end%>
+        <%= yield %>
       </div>
-    <%end%>
 
-  </div>
-</div>
-    
-
-      <!-- Footer -->
-      <footer class="page-footer font-small pt-4">
-      <!-- Copyright -->
-        <div class="footer-copyright text-center py-3 footer">© 2019 Copyright:
-            <a href="https://github.com/MarcinBalejko?tab=repositories" class="hlink"> Marcin Balejko</a>
+      <% if current_page?(new_user_session_path) == false && current_page?(new_user_registration_path) == false && current_page?(new_user_password_path) == false %>
+        <div class="col-lg-2">
+          <ul class="nav nav-pills nav-stacked">
+            <li><%= link_to 'All Categories', root_path, style: 'text-decoration: none;' %> &nbsp; </li>
+            <br>
+            <% Category.all.each do |category| %>
+              <li><%= link_to category.name, articles_path(category: category.name), style: 'text-decoration: none;' %> &nbsp; </li>
+              <br>
+            <% end %>
+          </ul>
         </div>
-      </footer>
+      <%end%>
 
+    </div>
+  </div>
+    
+  <!-- Footer -->
+  <footer class="page-footer font-small pt-4">
+  <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 footer">© 2019 Copyright:
+        <a href="https://github.com/MarcinBalejko?tab=repositories" class="hlink"> Marcin Balejko</a>
+    </div>
+  </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous">
-    </script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous">
+  </script>
 
-
-</body>
-
+  </body>
 </html>
