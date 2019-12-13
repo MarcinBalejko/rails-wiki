@@ -18,14 +18,14 @@ Tools and technologies used:
 
 |   Description    |   Image    |
 |:------------:|:----------------:|
-|User enters the page with articles| ![signin](app/assets/images/readme-pics/wiki1.jpg)|
-|User can register| ![signin](app/assets/images/readme-pics/wiki2.jpg)|
-|Signing up| ![signin](app/assets/images/readme-pics/wiki3.jpg)|
-|User can create new article| ![signin](app/assets/images/readme-pics/wiki4.jpg)|
-|Creating a new article| ![signin](app/assets/images/readme-pics/wiki5.jpg)|
-|New article created| ![signin](app/assets/images/readme-pics/wiki6.jpg)|
-|Editing the article| ![signin](app/assets/images/readme-pics/wiki7.jpg)|
-|User can view articles from a specific category| ![signin](app/assets/images/readme-pics/wiki8.jpg)|
+|User enters the main page with articles posted by others. | ![signin](app/assets/images/readme-pics/wiki1.jpg)|
+|User can make an account. | ![signin](app/assets/images/readme-pics/wiki2.jpg)|
+|User can sign up to the application by typing in his email address and creating a password. | ![signin](app/assets/images/readme-pics/wiki3.jpg)|
+|By selecting a 'New Article' option from navbar, user can create his own articles. | ![signin](app/assets/images/readme-pics/wiki4.jpg)|
+|Creating a new article is very easy. Each article consists of its text, image and a category selected by the user. | ![signin](app/assets/images/readme-pics/wiki5.jpg)|
+|New article created. Every new article can be viewed from the main page. | ![signin](app/assets/images/readme-pics/wiki6.jpg)|
+|Each article can be edited by its author or by admin.| ![signin](app/assets/images/readme-pics/wiki7.jpg)|
+|User can view articles from a specific category. | ![signin](app/assets/images/readme-pics/wiki8.jpg)|
 
 -----
 
