@@ -39,14 +39,14 @@
   </nav>
 
   <div class="container">
-  <% if current_page?(new_user_session_path) == false && current_page?(new_user_registration_path) == false && current_page?(new_user_password_path) == false %>
+  <% if current_page?(new_user_session_path) == false && current_page?(new_user_registration_path) == false && current_page?(new_user_password_path) != false && current_page?(new_user_password_path) == false  %>
     <div class="row">
       <div class="col-lg-10">
       <%end%>
         <%= yield %>
       </div>
 
-      <% if current_page?(new_user_session_path) == false && current_page?(new_user_registration_path) == false && current_page?(new_user_password_path) == false %>
+      <% if current_page?(new_user_session_path) == false && current_page?(new_user_registration_path) == false && current_page?(new_user_password_path) != false && current_page?(new_user_password_path) == false %>
         <div class="col-lg-2">
           <ul class="nav nav-pills nav-stacked">
             <li><%= link_to 'All Categories', root_path, style: 'text-decoration: none;' %> &nbsp; </li>

@@ -68,3 +68,14 @@ body, html {
     color: white;
 }
 
+.alert {
+    text-align: center;
+    color:black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.notice-p {
+    color: black;
+    font-size: 14px;
+}
